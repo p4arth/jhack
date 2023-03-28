@@ -27,7 +27,7 @@ Question: {data}
     return prompt
 
 def get_response(prompt):
-    co = cohere.Client('EoYqxEa60C0EEeKadblGW8NE94geVCEE75lDqySe')
+    co = cohere.Client('API_KEY')
     new_prompt = generate_prompt(prompt)
     response = co.generate(
         model='command-xlarge-nightly',  
